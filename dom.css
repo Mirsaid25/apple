@@ -1,0 +1,353 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+*{
+    margin: 0;
+    padding:0;
+    box-sizing: border-box;
+    text-decoration: none;
+    font-family: 'Roboto' ;
+}
+
+/* ---------------------- HEADER ---------------------------- */
+
+header{
+    width: 100%;
+    height: 50px;
+    background-color: #333333;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0 37px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 3;
+}
+header a img{
+    background-repeat: no-repeat;
+    filter:invert(20%) ;
+    transition: 300ms;
+}
+header a img:hover{
+    filter:invert(0) ;
+}
+
+.filter_icon{
+    filter: invert(80%);
+    height: 17px;
+}
+.filter_icon:hover{
+    filter: invert(100%);
+}
+
+
+header a{
+    margin:0 30px;
+    color: #b6b6b7;
+    font-size: 12px;
+    transition: 300ms;
+}
+header a:hover{
+    color: white;
+}
+
+/*-----------------------------------BLOCK1 -------------------------------- */
+
+.block1{
+    background-color: white;
+    opacity: 90%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 250px;
+    border-bottom: 1px solid rgb(172, 172, 172);
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 2;
+}
+
+.block1 h3{
+    font-size: 23px;
+}
+
+.block1 span{
+    font-size: 17px;
+    color: black;
+}
+
+/* ----------------------------- contener ------------------------- */
+
+.contener{
+    width: 1006px;
+    margin: 70px auto;
+}
+
+/* ---------------------------- grid_block ------------------------- */
+
+.grid_block{
+    width: 100%;
+    background-color: #FBFBFD;
+    border-radius: 18px;
+    height: 110px;
+    padding: 20px 13px;
+    display: grid;
+    grid-template-columns:repeat(5, 1fr);
+    grid-gap: 15px;
+}
+
+.grid_block1{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    line-height: 25px;
+}
+.grid_block1 p{
+  font-size: 15px;
+  text-align: center;
+  color: #1d1d1f;
+}
+
+.grid_block1 h2{
+    font-size: 17px;
+    font-weight: 600;
+    color: #1d1d1f;
+}
+
+.grid_block1:nth-child(1) a span{
+    color: #06c;
+    font-size: 14px;
+}
+
+.grid_block1:nth-child(1){
+    text-align: left ;
+    align-items: flex-start;
+}
+
+.grid_block1 img{
+    height: 28px;
+}
+
+/* -----------------------------main ------------------------------------- */
+
+main{
+    position:relative;
+    display: flex;
+    justify-content: space-between;
+    padding: 0 70px;
+    /* border: 1px solid black; */
+    
+}
+
+.main-left{
+    position: sticky;
+    top: 0;
+    left: 0;
+
+}
+.main-left img{
+    margin-bottom: 40px;
+}
+.w:nth-child(1){
+    position: absolute;
+    display: block;
+}
+.w:nth-child(2){
+    position: absolute;
+    display: none;
+}
+.w:nth-child(3){
+    position: absolute;
+    display: none;
+}
+.w:nth-child(4){
+    position: absolute;
+    display: none;
+}
+.w:nth-child(5){
+    position: absolute;
+    display: none;
+}
+.w:nth-child(6){
+    position: absolute;
+    display: none;
+}
+
+.main_left-bottom{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-size: 12px;
+    text-align: center;
+    padding: 0 30px;
+    font-weight: 500;
+    margin-bottom: 30px;
+    margin-top: 500px;
+}
+
+.main_left-bottom1 span{
+    font-size: 12px;
+    margin-right: 30px;
+    display: block;
+}
+
+.bottom_of_main_left{
+    display: flex;
+    justify-content: center;
+    padding-top: 20px;
+}
+.bottom_of_main_left img{
+    height: 35px;
+    margin-right: 20px;
+}
+
+.bottom_of_main_left2{
+    display: flex;
+    flex-direction: column;
+    font-size: 12px;
+}
+
+/* ----------------------main-right -------------------- */
+.main-right{
+    margin-top: 40px;
+}
+.main-right span{
+color: #bf4800;
+font-size: 17px;
+font-weight: 400;
+}
+
+.main-right h1{
+    margin-bottom: 13px;
+}
+
+.main-right p{
+    color: #1d1d1f;
+    font-size: 17px;
+    font-weight: 400;
+    margin-bottom:3px ;
+}
+
+.main-right a span{
+    color: #06c;
+    font-size: 17px;
+    font-weight: 400;
+    display: block;
+    margin-bottom: 30px;
+}
+.main-right h4{
+    margin-bottom: 30px;
+}
+
+.main-right_grid{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-auto-rows: 110px;
+    grid-gap: 20px;
+}
+
+.grid_choose_color{
+    border: 1px solid rgb(204, 204, 204);
+    border-radius: 10px;
+    padding-top: 30px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    transition: 300ms ease;
+}
+.grid_choose_color:hover{
+    border: 1px solid black;
+}
+
+.grid_choose_color img{
+    height: 32px;
+    display: block;
+    margin-bottom: 8px;
+}
+
+.grid_choose_color span{
+    font-size: 12px;
+    font-weight: 400;
+    color: #1d1d1f;
+}
+
+.iPhonePro{
+    border: 1px solid gray;
+    border-radius: 12px;
+    padding: 15px;
+    width: 405px;
+    height: 90px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+.iPhonePro_left h4{
+    font-size: 17px;
+    margin-bottom: 0;
+}
+
+.iPhonePro_left span{
+    font-size: 14px;
+    color: #333333;
+}
+
+.iPhonePro_rigth p{
+    font-size: 17px;
+    text-align: right;
+}
+
+/* ------------------------- modal --------------------------- */
+
+.modal{
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100vh;
+    width: 100%;
+    background-color: rgba(0,0,0, 0.5);
+    z-index: 10;
+}
+
+.inmodal{
+    position: relative;
+    margin: 100px auto;
+    width: 70%;
+    height: 80%;
+    background-color: rgb(255, 255, 255);
+    border-radius: 5%;
+    padding-top: 80px;
+}
+
+.inmodal button{
+    position: absolute;
+    border: 1px solid grey;
+    top: 20px;
+    left: 20px;
+    width: 5%;
+    height: 5%;
+    border-radius: 45%;
+    font-weight: 400;
+    font-size: 25px;
+}
+
+.inmodal h1{
+    text-align: center;
+    font-size: 40px;
+}
+.inmodal p{
+    text-align: center;
+    font-size: 20px;
+    padding: 14px 84px 25px 86px;
+}
+
+.inmodal span{
+    text-align: center;
+    text-align: center;
+    display: block;
+    font-size: 15px;
+    margin: 20px 50px ;
+}
